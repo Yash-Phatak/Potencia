@@ -1,5 +1,5 @@
-Current Plan :
-1. Optimize the Biceps Model and add the functionality of both hands.Also, the correctness parameter needs to be added. 
+Current Plan : (19/10/2023')
+1. Optimize the Biceps Model.Also, the correctness parameter needs to be added. 
 2. Squats Counter 
 3. Push Up Counter
 4. Skip Counter 
