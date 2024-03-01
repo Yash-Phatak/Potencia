@@ -37,7 +37,7 @@ def biceps():
             ret,frame = cap.read() #Start Capturing
             # Recolor to RGB
             image = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
-            image.flags.writeable = False
+            image.flags.writeable = False   
 
             # Detecting and storing in results list
             results = pose.process(image)
@@ -93,8 +93,8 @@ def biceps():
             # Rendering Curl Counter 
             # Setting up Status Box
             # Set a dark color for the text
-            # dark_text_color = (10, 10, 10)
-            dark_text_color = (255,255,255)
+            dark_text_color = (10, 10, 10)
+            # dark_text_color = (255,255,255)
             # For Left: 
             # Rep data
             cv2.putText(image, 'LEFT REPS', (15, 30), 

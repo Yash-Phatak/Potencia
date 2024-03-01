@@ -1,6 +1,7 @@
 from flask import Flask,render_template,Response,request
 from pose import biceps,jump
 
+
 app = Flask(__name__)
 
 @app.route('/')
