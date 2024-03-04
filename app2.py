@@ -27,8 +27,8 @@ def main():
 
 # Testing UI
 @app.post('/recommendation')
-async def recommendation(data:request_body):
-    input_dict = dict(data)
-    # text = data.get("user_rec")
+async def recommendation(data:Request):
+    input_dict = await data.json()
+    input_dict = dict(input_dict)
     answer = process(input_dict)
     return JSONResponse(content=answer)
