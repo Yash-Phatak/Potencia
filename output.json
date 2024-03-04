@@ -1,0 +1,577 @@
+{
+  "uid": "YASH",
+  "monday": [
+    {
+      "name": "High knees",
+      "desc": "High knees is a full-body, cardio-based exercise with an emphasis on the lower body. It is often performed for reps or time as part of a dynamic warm-up.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Stairmaster",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Stair climber",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Shadow boxing",
+      "desc": "Shadow boxing is an exercise typically used in combat sports and fighting. However, it can also make a great cardio session for anyone to implement in a fast-paced circuit or as active rest. It is usually performed for time or rounds.",
+      "target_muscle": "Shoulders",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "FYR Progressive High Knee",
+      "desc": "High knees is a full-body, cardio-based exercise with an emphasis on the lower body. It is often performed for reps or time as part of a dynamic warm-up.",
+      "target_muscle": "Glutes",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Leg Pull-In",
+      "desc": "The reverse crunch is a popular exercise targeting the abdominals, particularly the lower half. It\u2019s easy to perform on either the floor or a flat bench. Many lifters think of this as a companion to the crunch, which targets the upper abdominals more than the lower.",
+      "target_muscle": "Abdominals",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Cable reverse crunch",
+      "desc": "The cable reverse crunch is performed on the ground facing away from a high pulley, which helps target the lower abdominals specifically.",
+      "target_muscle": "Abdominals",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Cable"
+    },
+    {
+      "name": "High knees sprawl drill",
+      "desc": "The high knees sprawl drill is a full-body, cardio and strength-focused exercise. It can be performed for reps or time in a fast-paced circuit or other workout.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Stationary bike",
+      "desc": "The stationary bike is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stationary bike also helps develop the lower body. Stationary bikes come in multiple variations, ranging from ones that resemble riding a bike, to recumbent bikes, to fan bikes that work both the arms and the legs. No matter the variation, a stationary bike can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "FYR Mountain Climber",
+      "desc": "The mountain climber is a popular bodyweight exercise targeting the muscles of the core, as well as the shoulders, hips, and cardiovascular system. It involves lifting one knee to the chest at a time from a straight-arm plank position. It can be performed for time or reps as part of a dynamic warm-up, for bodyweight cardio or conditioning, or as no-equipment dynamic core training.",
+      "target_muscle": "Abdominals",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    }
+  ],
+  "tuesday": [
+    {
+      "name": "High knees",
+      "desc": "High knees is a full-body, cardio-based exercise with an emphasis on the lower body. It is often performed for reps or time as part of a dynamic warm-up.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Leverage Chest Press",
+      "desc": "The machine chest press is an upper body exercise targeting the pectoral muscles.",
+      "target_muscle": "Chest",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Bodyweight Flyes",
+      "desc": "The double-bar roll-out chest fly is a chest exercise that utilizes two rotating barbells as \"handles\" for a chest fly. It targets the muscles of the chest, but is also an intense core workout. It's a tough movement that is usually performed in the chest-focused portion of a workout.",
+      "target_muscle": "Chest",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "E-Z Curl Bar"
+    },
+    {
+      "name": "Stairmaster",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Stair climber",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Double-bar roll-out chest fly",
+      "desc": "The double-bar roll-out chest fly is a chest exercise that utilizes two rotating barbells as \"handles\" for a chest fly. It targets the muscles of the chest, but is also an intense core workout. It's a tough movement that is usually performed in the chest-focused portion of a workout.",
+      "target_muscle": "Chest",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "AM Chest Dips",
+      "desc": "The chest dip is a chest-building exercise in which the lifter hangs between two parallel handles. Leaning the torso slightly forward shifts the emphasis from the triceps to the chest.",
+      "target_muscle": "Chest",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Machine Seated Chest Press - Gethin Variation",
+      "desc": "The machine chest press is an upper body exercise targeting the pectoral muscles.",
+      "target_muscle": "Chest",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Incline dumbbell chest fly",
+      "desc": "The incline dumbbell chest fly is an upper-body exercise targeting the chest. Performing it at an incline helps to target the upper chest in particular, while limiting involvement of the shoulders. Fly variations are usually performed for moderate to high reps, such as 8-12 reps per set or more.",
+      "target_muscle": "Chest",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Dumbbell"
+    },
+    {
+      "name": "Shadow boxing",
+      "desc": "Shadow boxing is an exercise typically used in combat sports and fighting. However, it can also make a great cardio session for anyone to implement in a fast-paced circuit or as active rest. It is usually performed for time or rounds.",
+      "target_muscle": "Shoulders",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    }
+  ],
+  "wednesday": [
+    {
+      "name": "High knees",
+      "desc": "High knees is a full-body, cardio-based exercise with an emphasis on the lower body. It is often performed for reps or time as part of a dynamic warm-up.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Stairmaster",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Stair climber",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Leverage High Row",
+      "desc": "The machine high row is an exercise targeting the lats and works the back overall.",
+      "target_muscle": "Middle Back",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Incline Dumbbell Row - Gethin Variation",
+      "desc": "The incline dumbbell row is an upper body isolation exercise targeting the lower lats and upper back muscles.",
+      "target_muscle": "Lats",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Dumbbell"
+    },
+    {
+      "name": "Shadow boxing",
+      "desc": "Shadow boxing is an exercise typically used in combat sports and fighting. However, it can also make a great cardio session for anyone to implement in a fast-paced circuit or as active rest. It is usually performed for time or rounds.",
+      "target_muscle": "Shoulders",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "FYR Progressive High Knee",
+      "desc": "High knees is a full-body, cardio-based exercise with an emphasis on the lower body. It is often performed for reps or time as part of a dynamic warm-up.",
+      "target_muscle": "Glutes",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Elevated Cable Rows",
+      "desc": "The cable seated row is a popular exercise to train the muscles of the upper back, including the lats (latissimus dorsi), traps, rhomboids, and rear deltoids, using a cable stack. It also targets the biceps to a lesser degree. The cable row can work well in a variety of rep-ranges, but is most popular in muscle-building workouts or as an accessory movement for strength workouts.",
+      "target_muscle": "Lats",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Cable"
+    },
+    {
+      "name": "High knees sprawl drill",
+      "desc": "The high knees sprawl drill is a full-body, cardio and strength-focused exercise. It can be performed for reps or time in a fast-paced circuit or other workout.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Pull-up",
+      "desc": "The pull-up is a multijoint bodyweight exercise that builds strength and muscle in the upper back, biceps, and core. It is often used as a measurement tool in military or tactical fitness tests, and is an excellent gauge of \"relative strength\" which is strength in relation to body weight.",
+      "target_muscle": "Lats",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Body Only"
+    }
+  ],
+  "thursday": [
+    {
+      "name": "High knees",
+      "desc": "High knees is a full-body, cardio-based exercise with an emphasis on the lower body. It is often performed for reps or time as part of a dynamic warm-up.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Stairmaster",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Stair climber",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Shadow boxing",
+      "desc": "Shadow boxing is an exercise typically used in combat sports and fighting. However, it can also make a great cardio session for anyone to implement in a fast-paced circuit or as active rest. It is usually performed for time or rounds.",
+      "target_muscle": "Shoulders",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "FYR Progressive High Knee",
+      "desc": "High knees is a full-body, cardio-based exercise with an emphasis on the lower body. It is often performed for reps or time as part of a dynamic warm-up.",
+      "target_muscle": "Glutes",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Leg Pull-In",
+      "desc": "The reverse crunch is a popular exercise targeting the abdominals, particularly the lower half. It\u2019s easy to perform on either the floor or a flat bench. Many lifters think of this as a companion to the crunch, which targets the upper abdominals more than the lower.",
+      "target_muscle": "Abdominals",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Cable reverse crunch",
+      "desc": "The cable reverse crunch is performed on the ground facing away from a high pulley, which helps target the lower abdominals specifically.",
+      "target_muscle": "Abdominals",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Cable"
+    },
+    {
+      "name": "High knees sprawl drill",
+      "desc": "The high knees sprawl drill is a full-body, cardio and strength-focused exercise. It can be performed for reps or time in a fast-paced circuit or other workout.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Stationary bike",
+      "desc": "The stationary bike is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stationary bike also helps develop the lower body. Stationary bikes come in multiple variations, ranging from ones that resemble riding a bike, to recumbent bikes, to fan bikes that work both the arms and the legs. No matter the variation, a stationary bike can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "FYR Mountain Climber",
+      "desc": "The mountain climber is a popular bodyweight exercise targeting the muscles of the core, as well as the shoulders, hips, and cardiovascular system. It involves lifting one knee to the chest at a time from a straight-arm plank position. It can be performed for time or reps as part of a dynamic warm-up, for bodyweight cardio or conditioning, or as no-equipment dynamic core training.",
+      "target_muscle": "Abdominals",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    }
+  ],
+  "friday": [
+    {
+      "name": "High knees",
+      "desc": "High knees is a full-body, cardio-based exercise with an emphasis on the lower body. It is often performed for reps or time as part of a dynamic warm-up.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Leverage Chest Press",
+      "desc": "The machine chest press is an upper body exercise targeting the pectoral muscles.",
+      "target_muscle": "Chest",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Bodyweight Flyes",
+      "desc": "The double-bar roll-out chest fly is a chest exercise that utilizes two rotating barbells as \"handles\" for a chest fly. It targets the muscles of the chest, but is also an intense core workout. It's a tough movement that is usually performed in the chest-focused portion of a workout.",
+      "target_muscle": "Chest",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "E-Z Curl Bar"
+    },
+    {
+      "name": "Stairmaster",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Stair climber",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Double-bar roll-out chest fly",
+      "desc": "The double-bar roll-out chest fly is a chest exercise that utilizes two rotating barbells as \"handles\" for a chest fly. It targets the muscles of the chest, but is also an intense core workout. It's a tough movement that is usually performed in the chest-focused portion of a workout.",
+      "target_muscle": "Chest",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "AM Chest Dips",
+      "desc": "The chest dip is a chest-building exercise in which the lifter hangs between two parallel handles. Leaning the torso slightly forward shifts the emphasis from the triceps to the chest.",
+      "target_muscle": "Chest",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Machine Seated Chest Press - Gethin Variation",
+      "desc": "The machine chest press is an upper body exercise targeting the pectoral muscles.",
+      "target_muscle": "Chest",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Incline dumbbell chest fly",
+      "desc": "The incline dumbbell chest fly is an upper-body exercise targeting the chest. Performing it at an incline helps to target the upper chest in particular, while limiting involvement of the shoulders. Fly variations are usually performed for moderate to high reps, such as 8-12 reps per set or more.",
+      "target_muscle": "Chest",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Dumbbell"
+    },
+    {
+      "name": "Shadow boxing",
+      "desc": "Shadow boxing is an exercise typically used in combat sports and fighting. However, it can also make a great cardio session for anyone to implement in a fast-paced circuit or as active rest. It is usually performed for time or rounds.",
+      "target_muscle": "Shoulders",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    }
+  ],
+  "saturday": [
+    {
+      "name": "High knees",
+      "desc": "High knees is a full-body, cardio-based exercise with an emphasis on the lower body. It is often performed for reps or time as part of a dynamic warm-up.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Stairmaster",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Stair climber",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Leverage High Row",
+      "desc": "The machine high row is an exercise targeting the lats and works the back overall.",
+      "target_muscle": "Middle Back",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Incline Dumbbell Row - Gethin Variation",
+      "desc": "The incline dumbbell row is an upper body isolation exercise targeting the lower lats and upper back muscles.",
+      "target_muscle": "Lats",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Dumbbell"
+    },
+    {
+      "name": "Shadow boxing",
+      "desc": "Shadow boxing is an exercise typically used in combat sports and fighting. However, it can also make a great cardio session for anyone to implement in a fast-paced circuit or as active rest. It is usually performed for time or rounds.",
+      "target_muscle": "Shoulders",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "FYR Progressive High Knee",
+      "desc": "High knees is a full-body, cardio-based exercise with an emphasis on the lower body. It is often performed for reps or time as part of a dynamic warm-up.",
+      "target_muscle": "Glutes",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Elevated Cable Rows",
+      "desc": "The cable seated row is a popular exercise to train the muscles of the upper back, including the lats (latissimus dorsi), traps, rhomboids, and rear deltoids, using a cable stack. It also targets the biceps to a lesser degree. The cable row can work well in a variety of rep-ranges, but is most popular in muscle-building workouts or as an accessory movement for strength workouts.",
+      "target_muscle": "Lats",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Cable"
+    },
+    {
+      "name": "High knees sprawl drill",
+      "desc": "The high knees sprawl drill is a full-body, cardio and strength-focused exercise. It can be performed for reps or time in a fast-paced circuit or other workout.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Pull-up",
+      "desc": "The pull-up is a multijoint bodyweight exercise that builds strength and muscle in the upper back, biceps, and core. It is often used as a measurement tool in military or tactical fitness tests, and is an excellent gauge of \"relative strength\" which is strength in relation to body weight.",
+      "target_muscle": "Lats",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Body Only"
+    }
+  ],
+  "sunday": [
+    {
+      "name": "High knees",
+      "desc": "High knees is a full-body, cardio-based exercise with an emphasis on the lower body. It is often performed for reps or time as part of a dynamic warm-up.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Stairmaster",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Stair climber",
+      "desc": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "Shadow boxing",
+      "desc": "Shadow boxing is an exercise typically used in combat sports and fighting. However, it can also make a great cardio session for anyone to implement in a fast-paced circuit or as active rest. It is usually performed for time or rounds.",
+      "target_muscle": "Shoulders",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "FYR Progressive High Knee",
+      "desc": "High knees is a full-body, cardio-based exercise with an emphasis on the lower body. It is often performed for reps or time as part of a dynamic warm-up.",
+      "target_muscle": "Glutes",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Leg Pull-In",
+      "desc": "The reverse crunch is a popular exercise targeting the abdominals, particularly the lower half. It\u2019s easy to perform on either the floor or a flat bench. Many lifters think of this as a companion to the crunch, which targets the upper abdominals more than the lower.",
+      "target_muscle": "Abdominals",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Cable reverse crunch",
+      "desc": "The cable reverse crunch is performed on the ground facing away from a high pulley, which helps target the lower abdominals specifically.",
+      "target_muscle": "Abdominals",
+      "level": "Beginner",
+      "type": "Strength",
+      "equipment": "Cable"
+    },
+    {
+      "name": "High knees sprawl drill",
+      "desc": "The high knees sprawl drill is a full-body, cardio and strength-focused exercise. It can be performed for reps or time in a fast-paced circuit or other workout.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    },
+    {
+      "name": "Stationary bike",
+      "desc": "The stationary bike is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stationary bike also helps develop the lower body. Stationary bikes come in multiple variations, ranging from ones that resemble riding a bike, to recumbent bikes, to fan bikes that work both the arms and the legs. No matter the variation, a stationary bike can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+      "target_muscle": "Quadriceps",
+      "level": "Intermediate",
+      "type": "Cardio",
+      "equipment": "Machine"
+    },
+    {
+      "name": "FYR Mountain Climber",
+      "desc": "The mountain climber is a popular bodyweight exercise targeting the muscles of the core, as well as the shoulders, hips, and cardiovascular system. It involves lifting one knee to the chest at a time from a straight-arm plank position. It can be performed for time or reps as part of a dynamic warm-up, for bodyweight cardio or conditioning, or as no-equipment dynamic core training.",
+      "target_muscle": "Abdominals",
+      "level": "Intermediate",
+      "type": "Strength",
+      "equipment": "Body Only"
+    }
+  ]
+}
