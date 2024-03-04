@@ -17,14 +17,6 @@ app = FastAPI()
 def main():
     return {'message':'Potencia'}
 
-# @app.post('/recommendation')
-# async def recommendation(request: Request):
-#     data = await request.json()
-#     text = data.get("user_rec")
-#     answer = recommend(text)
-#     return JSONResponse(content=answer)
-
-
 # Testing UI
 @app.post('/recommendation')
 async def recommendation(data:Request):
