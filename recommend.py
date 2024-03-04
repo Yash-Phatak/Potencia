@@ -19,16 +19,35 @@ def to_String(row):
 data['string'] = data.apply(to_String,axis=1)
 # Final Function
 def recommend(text):
+    recommendations = []
     tfidf = TfidfVectorizer(max_features=2000)
     X = tfidf.fit_transform(data['string'])
     user_tfidf = tfidf.transform([text])
     scores = cosine_similarity(user_tfidf,X).flatten()
-    recommend_idx = (-scores).argsort()[1:11]
-    recommendation = list(data['Title'].iloc[recommend_idx])
-    output = {"answer":recommendation}
-    return output
+    recommend_idx = (-scores).argsort()[:10]
+    for idx in recommend_idx:
+        name = data['Title'].iloc[idx]
+        desc = data['Desc'].iloc[idx]
+        target_muscle = data['BodyPart'].iloc[idx]
+        level = data['Level'].iloc[idx]
+        type = data['Type'].iloc[idx]
+        equipment = data['Equipment'].iloc[idx]
+        recommendations.append({"name":name,"desc":desc,"target_muscle":target_muscle,"level":level,"type":type,"equipment":equipment})
+    return recommendations
 
-
+def process(input_dict):
+    output_list = []
+    tm = list(input_dict.values())[1]
+    for i in range(len(tm)):
+        input_string = tm[i] + " " + input_dict["level"] + " " +' '.join(list(input_dict.values())[3])
+        output = recommend(input_string)
+        output_list.append(output)
+    l = len(output_list)
+    keys = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+    output_dict = {"uid":input_dict["uid"]}
+    for i,key in enumerate(keys):
+        output_dict[key] = output_list[i%l]
+    return output_dict
 if __name__=='__main__':
     exercise = input("String from Frontend: ")
-    print(recommend(exercise))
+    print(process())

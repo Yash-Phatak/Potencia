@@ -1,11 +1,15 @@
 from fastapi import FastAPI,HTTPException,Request
+from typing import List
 from fastapi.responses import JSONResponse
-from recommend import recommend
+from recommend import process
 from pydantic import BaseModel
 import uvicorn
 
 class request_body(BaseModel):
-    message: str 
+    uid: str
+    target_muscle: List[str]
+    level: str
+    type: List[str]
 
 app = FastAPI()
 
@@ -24,7 +28,7 @@ def main():
 # Testing UI
 @app.post('/recommendation')
 async def recommendation(data:request_body):
-    data = data.message
+    input_dict = dict(data)
     # text = data.get("user_rec")
-    answer = recommend(data)
+    answer = process(input_dict)
     return JSONResponse(content=answer)
