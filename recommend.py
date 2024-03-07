@@ -5,7 +5,6 @@ import json
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-
 data = pd.read_csv('data/gym_data.csv')
 
 def to_String(row):
@@ -40,13 +39,17 @@ def process(input_dict):
     tm = list(input_dict.values())[1]
     for i in range(len(tm)):
         input_string = tm[i] + " " + input_dict["level"] + " " +' '.join(list(input_dict.values())[3])
+        # print(input_string)
         output = recommend(input_string)
+        # print(output)
         output_list.append(output)
     l = len(output_list)
+    print("Length",l)
     keys = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
     output_dict = {"uid":input_dict["uid"]}
     for i,key in enumerate(keys):
         output_dict[key] = output_list[i%l]
+    print(output_dict)
     return output_dict
 if __name__=='__main__':
     exercise = input("String from Frontend: ")
