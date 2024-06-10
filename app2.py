@@ -7,7 +7,7 @@ from pydantic import BaseModel
 import uvicorn
 
 app = FastAPI()
-# Allow all origins, put specific origins if needed
+# Allow all origins
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -26,8 +26,7 @@ class request_body(BaseModel):
 def main():
     return {'message':'Potencia'}
 
-# Testing UI
-@app.post('/recommendation')
+@app.post('/recommendation')    
 async def recommendation(data:Request):
     input_dict = await data.json()
     input_dict = dict(input_dict)
