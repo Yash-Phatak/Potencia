@@ -49,7 +49,7 @@ def biceps():
                 # Extract landmarks
                 landmarks = results.pose_landmarks.landmark
                 
-                # Get the required coordinates
+                # Get the required coordinates  
                 left_shoulder = [landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].x,landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].y]
                 left_elbow = [landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].x,landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].y]
                 left_wrist = [landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].x,landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].y]
@@ -262,3 +262,98 @@ def neck():
                     b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')  # concat frame one by one and show result
 
 biceps()
+
+
+
+
+
+
+
+
+
+
+
+
+
+def potencia(frame):
+    # Curl Counter Variables
+    global left_counter, right_counter, left_stage, right_stage
+
+    if 'left_counter' not in globals():
+        left_counter = 0
+    if 'right_counter' not in globals():
+        right_counter = 0
+    if 'left_stage' not in globals():
+        left_stage = None
+    if 'right_stage' not in globals():
+        right_stage = None
+
+    # Setting up Mediapipe Instance 
+    with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
+        # Recolor to RGB
+        image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        image.flags.writeable = False
+
+        # Detecting and storing in results list
+        results = pose.process(image)
+
+        # Recolor back to BGR
+        image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+        
+        try:
+            # Extract landmarks
+            landmarks = results.pose_landmarks.landmark
+            
+            # Get the required coordinates  
+            left_shoulder = [landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].x,
+                             landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].y]
+            left_elbow = [landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].x,
+                          landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].y]
+            left_wrist = [landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].x,
+                          landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].y]
+
+            right_shoulder = [landmarks[mp_pose.PoseLandmark.RIGHT_SHOULDER.value].x,
+                              landmarks[mp_pose.PoseLandmark.RIGHT_SHOULDER.value].y]
+            right_elbow = [landmarks[mp_pose.PoseLandmark.RIGHT_ELBOW.value].x,
+                           landmarks[mp_pose.PoseLandmark.RIGHT_ELBOW.value].y]
+            right_wrist = [landmarks[mp_pose.PoseLandmark.RIGHT_WRIST.value].x,
+                           landmarks[mp_pose.PoseLandmark.RIGHT_WRIST.value].y]
+
+            # Get the Angle
+            left_angle = calculate_angle(left_shoulder, left_elbow, left_wrist)
+            right_angle = calculate_angle(right_shoulder, right_elbow, right_wrist)
+            
+            # Visualise 
+            # Left
+            cv2.putText(image, str(left_angle), tuple(np.multiply(left_elbow, [640, 480]).astype(int)),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2, cv2.LINE_AA)
+            # Right
+            cv2.putText(image, str(right_angle), tuple(np.multiply(right_elbow, [640, 480]).astype(int)),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2, cv2.LINE_AA)
+
+            # Landmark Rendering
+            mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS,
+                                      mp_drawing.DrawingSpec(color=(117, 66, 245), thickness=2, circle_radius=2),
+                                      mp_drawing.DrawingSpec(color=(245, 117, 66), thickness=2, circle_radius=2))
+            
+            # Curl Counter  
+            if left_angle > 150:
+                left_stage = "down"
+            if left_angle < 30 and left_stage == "down":
+                left_stage = "up"
+                left_counter += 1
+                print("Left Counter: {}".format(left_counter))
+            if right_angle > 150:
+                right_stage = "down"
+            if right_angle < 30 and right_stage == "down":
+                right_stage = "up"
+                right_counter += 1
+                print("Right Counter: {}".format(right_counter))
+
+        except Exception as e:
+            print(f"Error processing frame: {e}")
+
+        # Display frame with results
+        image = cv2.flip(image, 1)  # Flip horizontally for a mirror effect
+        cv2.imshow('Mediapipe Feed', image)
+        return left_counter,right_counter
