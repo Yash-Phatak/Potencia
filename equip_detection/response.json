@@ -1,0 +1,71 @@
+{
+    "name": "Full Body Home Machine Workout",
+    "description": "This workout utilizes common home exercise equipment for a comprehensive full body session.",
+    "warm_up": "5 minutes of light cardio, such as jogging in place or jumping jacks, followed by dynamic stretches like arm circles, leg swings, and torso twists.",
+    "exercises": [
+      {
+        "name": "Dumbbell Bench Press",
+        "equipment": "Dumbbells",
+        "reps": "8-12",
+        "sets": "3",
+        "target_muscles": "Chest, Triceps, Front Shoulders"
+      },
+      {
+        "name": "Dumbbell Rows",
+        "equipment": "Dumbbells",
+        "reps": "8-12",
+        "sets": "3",
+        "target_muscles": "Back, Biceps"
+      },
+      {
+        "name": "Dumbbell Squats",
+        "equipment": "Dumbbells",
+        "reps": "10-15",
+        "sets": "3",
+        "target_muscles": "Quadriceps, Glutes, Hamstrings"
+      },
+      {
+        "name": "Dumbbell Lunges",
+        "equipment": "Dumbbells",
+        "reps": "10-15 per leg",
+        "sets": "3",
+        "target_muscles": "Quadriceps, Glutes, Hamstrings"
+      },
+      {
+        "name": "Dumbbell Overhead Press",
+        "equipment": "Dumbbells",
+        "reps": "8-12",
+        "sets": "3",
+        "target_muscles": "Shoulders"
+      },
+      {
+        "name": "Dumbbell Bicep Curls",
+        "equipment": "Dumbbells",
+        "reps": "10-15",
+        "sets": "3",
+        "target_muscles": "Biceps"
+      },
+      {
+        "name": "Dumbbell Triceps Extensions",
+        "equipment": "Dumbbells",
+        "reps": "10-15",
+        "sets": "3",
+        "target_muscles": "Triceps"
+      },
+      {
+        "name": "Plank",
+        "equipment": "None",
+        "reps": "Hold for 30-60 seconds",
+        "sets": "3",
+        "target_muscles": "Core"
+      },
+      {
+        "name": "Crunches",
+        "equipment": "None",
+        "reps": "15-20",
+        "sets": "3",
+        "target_muscles": "Abdominals"
+      }
+    ],
+    "cool_down": "5 minutes of static stretches, holding each stretch for 30 seconds."
+  }

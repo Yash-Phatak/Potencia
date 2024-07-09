@@ -1,0 +1,3 @@
+def prompt_text(predicted_class)->str:
+    prompt = f"Give a workout plan for 5 exercises in the format (name,description with some tips, warm up, (exercise, reps, cycles , target muscles) ,cooldown) for the detected equipment in json documented format: {predicted_class}. Strictly maintain only one  json format. Every field in json is in string datatype.When predicted class is Home Machine, replace it with Multi Gym Machine for the answer. Keep the json features consistent throughout the response. "
+    return prompt

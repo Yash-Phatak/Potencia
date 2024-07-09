@@ -272,9 +272,6 @@ biceps()
 
 
 
-
-
-
 def potencia(frame):
     # Curl Counter Variables
     global left_counter, right_counter, left_stage, right_stage
@@ -298,7 +295,7 @@ def potencia(frame):
         results = pose.process(image)
 
         # Recolor back to BGR
-        image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+        # image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
         
         try:
             # Extract landmarks
@@ -325,16 +322,16 @@ def potencia(frame):
             
             # Visualise 
             # Left
-            cv2.putText(image, str(left_angle), tuple(np.multiply(left_elbow, [640, 480]).astype(int)),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2, cv2.LINE_AA)
-            # Right
-            cv2.putText(image, str(right_angle), tuple(np.multiply(right_elbow, [640, 480]).astype(int)),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2, cv2.LINE_AA)
+            # cv2.putText(image, str(left_angle), tuple(np.multiply(left_elbow, [640, 480]).astype(int)),
+            #             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2, cv2.LINE_AA)
+            # # Right
+            # cv2.putText(image, str(right_angle), tuple(np.multiply(right_elbow, [640, 480]).astype(int)),
+            #             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2, cv2.LINE_AA)
 
-            # Landmark Rendering
-            mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS,
-                                      mp_drawing.DrawingSpec(color=(117, 66, 245), thickness=2, circle_radius=2),
-                                      mp_drawing.DrawingSpec(color=(245, 117, 66), thickness=2, circle_radius=2))
+            # # Landmark Rendering
+            # mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS,
+            #                           mp_drawing.DrawingSpec(color=(117, 66, 245), thickness=2, circle_radius=2),
+            #                           mp_drawing.DrawingSpec(color=(245, 117, 66), thickness=2, circle_radius=2))
             
             # Curl Counter  
             if left_angle > 150:
@@ -354,6 +351,6 @@ def potencia(frame):
             print(f"Error processing frame: {e}")
 
         # Display frame with results
-        image = cv2.flip(image, 1)  # Flip horizontally for a mirror effect
-        cv2.imshow('Mediapipe Feed', image)
+        # image = cv2.flip(image, 1)  # Flip horizontally for a mirror effect
+        # cv2.imshow('Mediapipe Feed', image)
         return left_counter,right_counter

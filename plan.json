@@ -1,0 +1,40 @@
+{
+    "workout_plan": {
+        "name": "Dumbbell Full Body Workout",
+        "description": "This workout targets all major muscle groups using dumbbells. It's a great option for building strength and muscle mass.",
+        "warm_up": "5 minutes of light cardio, such as jogging in place or jumping jacks.  Dynamic stretching like arm circles, leg swings, and torso twists.",
+        "exercises": [
+            {
+                "exercise": "Dumbbell Squats",
+                "reps": "10-12",
+                "cycles": "3",
+                "target_muscles": "Quadriceps, glutes, hamstrings"
+            },
+            {
+                "exercise": "Dumbbell Bench Press",
+                "reps": "8-10",
+                "cycles": "3",
+                "target_muscles": "Chest, triceps, shoulders"
+            },
+            {
+                "exercise": "Dumbbell Rows",
+                "reps": "10-12",
+                "cycles": "3",
+                "target_muscles": "Back, biceps"
+            },
+            {
+                "exercise": "Dumbbell Overhead Press",
+                "reps": "8-10",
+                "cycles": "3",
+                "target_muscles": "Shoulders, triceps"
+            },
+            {
+                "exercise": "Dumbbell Bicep Curls",
+                "reps": "10-12",
+                "cycles": "3",
+                "target_muscles": "Biceps"
+            }
+        ],
+        "cooldown": "5 minutes of static stretching, holding each stretch for 30 seconds."
+    }
+}
