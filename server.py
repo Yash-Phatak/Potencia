@@ -37,10 +37,9 @@ async def upload_image(image: UploadFile = File(...)):
     image = Image.open(BytesIO(contents))
     print("Image Found")
     result = detect(image)
-    output = 'equip_detection/response.json'
+    output = 'plan.json'
     with open(output, 'r') as file:
         dictionary = json.load(file)
-    # return JSONResponse(content=result)
     return JSONResponse(content=dictionary)
 
 # Socket.IO server setup
