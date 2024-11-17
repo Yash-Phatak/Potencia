@@ -1,40 +1,40 @@
 {
     "workout_plan": {
-        "name": "Multi Gym Machine Workout",
-        "description": "This workout plan utilizes a multi-gym machine to target various muscle groups. Each exercise focuses on a specific muscle area, promoting overall strength and muscle development.",
-        "warm_up": "Start with 5 minutes of light cardio, such as jumping jacks or jogging in place. Follow this with dynamic stretches like arm circles, leg swings, and torso twists.",
+        "name": "Dumbbell Full Body Workout",
+        "description": "This workout targets all major muscle groups using dumbbells. It's great for building strength and muscle mass.",
+        "warm_up": "5 minutes of light cardio, such as jogging in place or jumping jacks, followed by dynamic stretching, like arm circles and leg swings.",
         "exercises": [
             {
-                "exercise": "Lat Pulldown",
-                "reps": "10-12",
+                "exercise": "Dumbbell Bench Press",
+                "reps": "8-12",
                 "cycles": "3",
-                "target_muscles": "Back (Latissimus Dorsi), Biceps"
+                "target_muscles": "Chest, Triceps, Shoulders"
             },
             {
-                "exercise": "Chest Press",
-                "reps": "10-12",
+                "exercise": "Dumbbell Rows",
+                "reps": "8-12",
                 "cycles": "3",
-                "target_muscles": "Chest (Pectoralis Major), Triceps"
+                "target_muscles": "Back, Biceps"
             },
             {
-                "exercise": "Leg Extension",
-                "reps": "12-15",
+                "exercise": "Dumbbell Squats",
+                "reps": "10-15",
                 "cycles": "3",
-                "target_muscles": "Quadriceps"
+                "target_muscles": "Quadriceps, Hamstrings, Glutes"
             },
             {
-                "exercise": "Leg Curl",
-                "reps": "12-15",
+                "exercise": "Dumbbell Lunges",
+                "reps": "10-15 per leg",
                 "cycles": "3",
-                "target_muscles": "Hamstrings"
+                "target_muscles": "Quadriceps, Hamstrings, Glutes"
             },
             {
-                "exercise": "Shoulder Press",
-                "reps": "10-12",
+                "exercise": "Dumbbell Overhead Press",
+                "reps": "8-12",
                 "cycles": "3",
-                "target_muscles": "Shoulders (Deltoids), Triceps"
+                "target_muscles": "Shoulders, Triceps"
             }
         ],
-        "cooldown": "Finish with 5 minutes of static stretching, holding each stretch for 30 seconds. Focus on stretching the muscles worked during the workout."
+        "cooldown": "5 minutes of static stretching, holding each stretch for 30 seconds."
     }
 }

@@ -37,51 +37,6 @@ def classify_image(model, img_path):
     confidence = np.max(predictions)
     return predicted_class, confidence
 
-# def detect(image: Image.Image) -> dict:
-#     img_path = 'imagesentfromfrontend.jpg'
-#     image.save(img_path)
-
-#     predicted_class, confidence = classify_image(model,img_path)
-#     print(f"Predicted class: {predicted_class} with confidence {confidence:.2f}")
-
-
-
-#     GOOGLE_API_KEY = 'AIzaSyAcIimOXgOOEMMIcSyUhZ_RoOtKSe38VRY'
-#     genai.configure(api_key=GOOGLE_API_KEY)
-
-#     gemini = genai.GenerativeModel('gemini-1.5-flash')
-#     prompt = f"Give a workout plan  (name,description, warm up, reps , target muscles ) for the detected equipment in json documented format: {predicted_class}. Strictly maintain only one  json format. Every field in json is in string datatype."
-#     response = gemini.generate_content(prompt)
-#     # response = response.to_dict()
-#     # print(response)
-#     response = response.to_dict()
-#     text = response['candidates'][0]['content']['parts'][0]['text']
-
-#     with open('output.txt', 'w') as f:
-#         f.write(text)
-
-#     # # Reading the response
-#     # with open('output.txt', 'r') as file:
-#     #     content = file.read()
-
-#     # pattern = re.compile(r'({.*?})', re.DOTALL)
-#     # match = pattern.search(content)
-
-#     # if match:
-#     #     json_string = match.group(1)
-#     #     try:
-#     #         json_data = json.loads(json_string)
-#     #         with open('output.json', 'w') as json_file:
-#     #             json.dump(json_data, json_file, indent=4)
-            
-#     #         print("JSON data successfully extracted and saved to 'output.json'.")
-#     #     except json.JSONDecodeError as e:
-#     #         print("Invalid JSON data:", e)
-#     # else:
-#     #     print("No JSON content found")
-
-#     return response
-
 def detect(image:Image.Image):
     img_path = 'imagesentfromfrontend.jpg'
     image.save(img_path)

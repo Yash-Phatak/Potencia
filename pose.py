@@ -264,14 +264,6 @@ def neck():
 biceps()
 
 
-
-
-
-
-
-
-
-
 def potencia(frame):
     # Curl Counter Variables
     global left_counter, right_counter, left_stage, right_stage

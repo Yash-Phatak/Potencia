@@ -8,6 +8,7 @@ import numpy as np
 from fastapi import FastAPI,File,UploadFile
 import json
 from pose import potencia
+from exercises import deadlift,jump
 from fastapi.responses import JSONResponse
 from io import BytesIO
 from fastapi.middleware.cors import CORSMiddleware
@@ -55,6 +56,36 @@ async def connect(sid, environ):
 @sio.on("disconnect")
 async def disconnect(sid):
     print(f"Client disconnected: {sid}")
+
+@sio.on("deadlift_frame")
+async def deadlift_frame(sid,data):
+
+    buffer = base64.b64decode(data)
+    frame = cv2.imdecode(np.frombuffer(buffer, dtype=np.uint8), 1)
+
+    # Process frame using socket function
+    lean,dist,stage,rep = deadlift(frame)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        cv2.destroyAllWindows()
+    response_string = str(lean)+" "+str(dist) + " " + str(stage)+" "+str(rep)
+    await sio.emit('message', response_string)
+    print(response_string)
+
+@sio.on("jump_frame")
+async def jump_frame(sid,data):
+    buffer = base64.b64decode(data)
+    frame = cv2.imdecode(np.frombuffer(buffer, dtype=np.uint8), 1)
+
+    # Process frame using socket function
+    stage,counter = jump(frame)
+
+    # Display the received frame (for debugging)
+    # cv2.imshow('Received Frame', frame)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        cv2.destroyAllWindows()
+    response_string = str(stage)+" "+str(counter)
+    await sio.emit('message', response_string)
+    print(response_string)
 
 @sio.on("send_frame")
 async def send_frame(sid, data):
